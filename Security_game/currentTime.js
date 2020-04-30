@@ -24,6 +24,12 @@ function updateCountdown()
 	remainingSeconds = remainingSeconds < 0 ? 0 : remainingSeconds; 
 	
 	localStorage.setItem('endTime', remainingSeconds);
+	
+	/*if (remainingSeconds === 0)
+	{
+		window.location.href = "loser.html";
+	}*/
+	
 }
 
 
