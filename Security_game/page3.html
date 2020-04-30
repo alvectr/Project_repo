@@ -20,15 +20,49 @@
 			
 			<table>
 				<tr>
+					
 					<td><button id = "buttonOne" onclick = "firstButton()">OK</button> </td>
 					<td><button id = "buttonTwo" onclick = "secondButton()">OK</button> </td>
+					
+				</tr>
+				
+				<tr>
+					
+					<td><button id ="buttonThree" onclick = "thirdButton()">OK</button></td>
+					<td><button id ="buttonFour" onclick = "fourthButton()">OK</button></td>
+				
 				</tr>
 			</table>
 			
+			Answer : <input type = "text" id = "answer">
+			<br><br>
 			
-		</div>
+			<button type = "button" onclick = "correctAnswer()">Click Me</button>
+			
 		
 		
+		
+		<script>
+			
+			function correctAnswer()
+			{
+				
+				let possible = document.getElementById("answer").value;
+				
+				if(possible.localeCompare("i hacked the hacker")===0)
+				{
+					alert("well done");
+					//window.location.href = "winner.html";
+				}
+				else
+				{
+					alert("Please try again");
+				}
+			}
+		</script>
+		
+			
+			</div>
 	</body>
 	
 	
