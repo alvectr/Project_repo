@@ -1,0 +1,82 @@
+<html>
+	
+	<head>
+		
+		<meta charset = "utf-8">
+		<title></title>
+		
+	</head>
+	
+	<body>
+		
+		
+		<div id = "section">
+			<h1>This is the first page</h1>
+			
+			
+			<p id = "countdown"></p>
+			<script src ="timer.js"></script>
+			
+			<p id ="demo">
+				
+				<table>
+					
+					<tr> 
+						<td>
+							Password: <input type ="text" id="pass1">
+						</td>
+						<td>
+							Password: <input type = "text" id = "pass2" name = "pass2">
+						</td>
+					
+					</tr>
+					<tr> 
+						<td>
+							Password: <input type ="text" id="pass3" name = "pass3">
+						</td>
+						<td>
+							Password: <input type = "text" id = "pass4" name = "pass4">
+						</td>
+					
+					</tr>
+					
+				</table>
+			<button type ="button" onclick = "myFunction()">OK</button>
+			</p>
+		
+		
+			
+		<script>
+		
+		function myFunction()
+		{
+			
+			let store = document.getElementById("pass1").value;
+			let test = localStorage.getItem('endTime');
+			if(store != "")
+			{
+				alert("There was something in pass1");
+				alert(test);
+				//document.write("<a href = page2.html></a>");
+				window.location.href = "page2.html";
+				
+			}
+			else
+			{
+				alert("wrong");
+				window.location.href = "gulag.html";
+			}
+			
+			
+		}
+			
+			
+	</script>
+	
+		</div>
+		
+	</body>
+
+	
+	
+</html>
