@@ -10,14 +10,42 @@
 	<body>
 		
 		
-		
+		<style>
+body {
+  background-image: url('cipher.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
 		<div>
-			<h1>Sup p3 here</h1>
+			<center>
 			
 			<p id = "countdown"></p>
 			<script src ="currentTime.js"></script>
 			
-			
+			<h1 style="color:white">Sup p3 here</h1>
 			<table>
 				<tr>
 					
@@ -34,7 +62,7 @@
 				</tr>
 			</table>
 			
-			Answer : <input type = "text" id = "answer">
+			<br><p style="color:white">Answer :</p> <input type = "text" id = "answer">
 			<br><br>
 			
 			<button type = "button" onclick = "correctAnswer()">Click Me</button>
