@@ -9,16 +9,44 @@
 	</head>
 	
 	<body>
-		
+		<style>
+body {
+  background-image: url('fish.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
 		
 		<div id = "section">
-			<h1>This is the first page</h1>
+			<center><br><h1>Room 3</h1></br>
 			
 			
 			<p id = "countdown"></p>
-			<script src ="timer.js"></script>
+			<script src ="timer.js"></script></center><br><br>
 			
-			<p id ="demo">
+			<center><p id ="demo">
 				
 				<table>
 					
@@ -42,7 +70,7 @@
 					</tr>
 					
 				</table>
-			<button type ="button" onclick = "myFunction()">OK</button>
+			<br><button type ="button" onclick = "myFunction()">OK</button>
 			</p>
 		
 		
