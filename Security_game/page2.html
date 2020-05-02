@@ -9,27 +9,55 @@
 	</head>
 	
 	<body>
-		
+		<style>
+body {
+  background-image: url('track.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
 		
 		
 		<div>
 			
-			<h1>Room 2</h1>
+		
 			
-			<p id = "countdown"></p>
-			<script src ="currentTime.js"></script>
+		 <center>	<p id = "countdown"></p>
+			 <script src ="currentTime.js"></script></center><br><br>
 			
-			<p>
+			<center><h2 style="color: black; background-color: white">
 				Electric surges moves across the track, with signals far and wide <br>
 				of my victory. Given "DBJRWKXUC" what is the answer to the riddle? <br><br>
 				
 				(hint: count the number of words in the riddle)
 				
 				<br>
-				
+				</h2>
 				<input type = text id = name>
 				<button onclick = "usainFunc()">OK</button>
-			</p>
+			
 			
 		</div>
 		
